@@ -52,3 +52,20 @@ x = "99"
 y = 100
 z = float(x) + y
 print(z)
+
+print("========================")
+x = "Hello"
+print(bool(x))
+if x:
+    print("That's True!")
+else:
+    print("That's False")
+print("========================")
+print(f"bool(0) {bool(0)}")
+print(f"bool(100) {bool(100)}")
+print(f"bool('') {bool('')}")
+print(f"bool('goodbye') {bool('goodbye')}")
+print(f"bool([1,2,]) {bool([1,2,])}")
+print(f"bool([]) {bool([])}")
+
+
