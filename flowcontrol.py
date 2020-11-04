@@ -59,4 +59,8 @@ else:
 # python does not have case/switch ...
 # some folks use dict to fake it.
 
+print("-------------------")
 
+x = -1
+y = 99 if x == 1 else 100
+print(y)
