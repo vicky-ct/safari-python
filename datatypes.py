@@ -71,3 +71,30 @@ print(v)
 print(type(v))
 print(v[0])
 print(v[1])
+print("--------------------")
+print(numbers)
+print(tuple(numbers))  # tuples are Immutalble
+
+r = range(1, 100, 3)
+print(r)
+print(type(r))
+print(list(r))
+print(type(list(r)))
+
+print(tuple(range(1, 10000)))
+
+person = ("Fred", 12345, "Sales")
+print(person)
+print(person[0])
+# person[0] = "Frederick"  # "shallowly immutable"
+
+person = ("Fred", 12345, "Sales", ["Alice", "Bob"])
+print(person[3])
+person[3][0:0] = ["William", "Maverick"]
+print(person)
+
+# date = (11, 4, 2020)
+date = 11, 4, 2020
+# (month, day, year) = date
+month, day, year = date
+print(f"month={month}")
